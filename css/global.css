@@ -1,0 +1,43 @@
+/* Variables */
+/* Mixins */
+* {
+  margin: 0;
+  font-family: verdana;
+}
+
+.header-navigation {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+  padding: 1rem 4rem 0;
+  position: fixed;
+  top: 0;
+  width: 93%;
+  z-index: 99;
+}
+.header-navigation__link li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 1rem;
+}
+.header-navigation__link li a {
+  text-decoration: none;
+  color: black;
+}
+.header-navigation__link li .active {
+  border-bottom: 3px solid #db7a4e;
+}
+.header-navigation__link li :hover {
+  border-bottom: 3px solid #db7a4e;
+}
+.header-navigation a {
+  text-decoration: none;
+  color: #335576;
+}
+
+/*Footer Styles*/
+.footer__social img:hover {
+  opacity: 0.8;
+  transform: scale(1.5);
+  transition: all 0.3s;
+}

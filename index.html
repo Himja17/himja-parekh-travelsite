@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Site</title>
+    <link rel="stylesheet" href="./css/global.css" type="text/css" />
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- This is the Header -->
+    <header>
+      <!-- This is the Main Logo -->
+      <nav role="Navigation" aria-label="Navigation Bar" class="header-logo">
+        <div class="header-navigation">
+          <h3><a href="./index.html">Travel Site </a></h3>
+          <div class="header-navigation__link">
+            <!-- These are the top nav links on the right side -->
+            <ul>
+              <li role="Navigation" aria-label="Home Link">
+                <a href="./index.html" class="active">Home</a>
+              </li>
+              <li role="Navigation" aria-label="Hawaii Page Link">
+                <a href="./pages/hawaii.html">Hawaii</a>
+              </li>
+              <li role="Navigation" aria-label="Iceland Page Link">
+                <a href="./pages/iceland.html">Iceland</a>
+              </li>
+              <li role="Navigation" aria-label="Greece Page Link">
+                <a href="./pages/greece.html">Greece</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- This is the main hero section -->
+    <div class="hero">
+      <main role="Main" aria-label="Main Section" class="hero-main">
+        <div class="hero-content">
+          <h1>Travelling Comes With Endless Discoveries</h1>
+          <p>
+            Don't let your dreams be just dreams. Experience the world by
+            booking a vacation with us now.
+          </p>
+          <button role="button" aria-label="Get started button">
+            <a href="./pages/form.html"> Get Started</a>
+          </button>
+        </div>
+        <div class="hero-image">
+          <img
+            src="./assets/Images/hero.png"
+            alt="a world globe with a aeroplane and location pin logo"
+          />
+        </div>
+      </main>
+    </div>
+    <!-- This is a recommendations card section -->
+    <div class="recommendations">
+      <section
+        role="section"
+        aria-label="Recommendations section"
+        class="recommendations-section"
+      >
+        <h2>Recommendations</h2>
+        <div class="card">
+          <div class="card-image">
+            <img
+              src="./assets/Images/hawaii.jpg"
+              alt="beach with palm tree slanting"
+            />
+            <a href="./pages/hawaii.html"><h2>Hawaii</h2></a>
+          </div>
+          <div class="card-image">
+            <img
+              src="./assets/Images/iceland.jpg"
+              alt="river running between huge green mountains"
+            />
+            <a href="./pages/iceland.html"><h2>Iceland</h2></a>
+          </div>
+          <div class="card-image">
+            <img src="./assets/Images/greece.jpg" alt="white walls and rock" />
+            <a href="./pages/greece.html"><h2>Greece</h2></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- This is the footer -->
+    <footer role="footer" aria-label="footer content" class="footer">
+      <!-- Contact footer -->
+      <div class="footer__contact">
+        <h2>Contact</h2>
+        <p class="footer__para">email</p>
+        <p class="footer-time">info@travelsite.com</p>
+      </div>
+      <!-- Hours footer -->
+      <div>
+        <h2>Hours</h2>
+        <div class="footer__hours">
+          <div class="footer__hours-para">
+            <p class="footer__para">monday - friday</p>
+            <p class="footer-time">9.00 AM - 5.00 PM</p>
+          </div>
+          <div class="footer__hours-para">
+            <p class="footer__para">saturday</p>
+            <p class="footer-time">10.00 AM - 4.00 PM</p>
+          </div>
+          <div class="footer__hours-para">
+            <p class="footer__para">sunday</p>
+            <p class="footer-time">Closed</p>
+          </div>
+        </div>
+      </div>
+      <!-- Social footer -->
+      <div class="footer__social">
+        <h2>Social</h2>
+        <a href="https://www.instagram.com"
+          ><img
+            src="./assets/Icons/icon-instagram.png"
+            alt="instagram icon"
+            class="social-icon"
+        /></a>
+        <a href="https://www.facebook.com"
+          ><img
+            src="./assets/Icons/icon-facebook.png"
+            alt="facebook icon"
+            class="social-icon facebook"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img
+            src="./assets/Icons/icon-twitter.png"
+            alt="twitter icon"
+            class="social-icon"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

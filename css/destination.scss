@@ -1,0 +1,123 @@
+@use "./global.scss" as *;
+@use "./main.scss" as *;
+
+// variables
+$destination-title: 2rem;
+
+// mixins
+@mixin destination-image {
+  margin-top: 4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../assets/Images/hawaii.jpg);
+  height: 50rem;
+}
+@mixin iternary {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 16rem;
+  background-color: $header-color;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+@mixin list {
+  list-style: none;
+  margin-top: 2rem;
+  background-color: $background-color;
+  font-size: 1.2rem;
+  width: 16rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+// destination page styling
+.main-destination {
+  @include destination-image;
+  background-image: url(../assets/Images/hawaii.jpg);
+
+  h1 {
+    font-size: 5rem;
+    color: $header-color;
+    padding: 4rem 0 4rem 6rem;
+  }
+}
+.card-destination {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 15rem;
+
+  &__iternary {
+    @include iternary;
+  }
+  &__day {
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom: 3px solid black;
+    padding: 1rem 1rem 0 1rem;
+  }
+  &__list ul {
+    padding: 0;
+
+    li {
+      @include list;
+    }
+  }
+}
+#main-destination__Iceland {
+  background-image: url(../assets/Images/iceland.jpg);
+}
+#main-destination__Greece {
+  background-image: url(../assets/Images/greece.jpg);
+}
+
+.card-destination__iternary:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header-logo,
+  .main-destination,
+  .footer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .header-navigation {
+    display: block;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .card-destination {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .main-destination {
+    height: 100%;
+  }
+
+  .main-destination h1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer {
+    margin-top: 0;
+    position: absolute;
+    top: 95.1rem;
+  }
+}

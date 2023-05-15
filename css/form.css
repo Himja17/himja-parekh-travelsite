@@ -1,0 +1,21 @@
+.main-form {
+  margin-top: 5rem;
+  width: 40rem;
+  margin-left: 40rem;
+  line-height: 2rem;
+  background-color: #fefaf5;
+  margin-bottom: 2rem;
+}
+
+h2,
+h1 {
+  color: #335576;
+}
+
+div ul li {
+  list-style-type: none;
+}
+
+.footer {
+  padding-bottom: 3rem;
+}

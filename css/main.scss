@@ -1,0 +1,182 @@
+@use "./global.scss" as *;
+
+/*Hero Section*/
+
+.hero {
+  background-color: $background-color;
+  margin-top: 4rem;
+  height: 30rem;
+
+  .hero-content {
+    color: $title-color;
+    align-self: center;
+    width: 30rem;
+
+    h1 {
+      padding-bottom: 2rem;
+    }
+    p {
+      padding-bottom: 2rem;
+    }
+  }
+}
+.hero-image img {
+  width: 33rem;
+}
+.hero-main {
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  @include button;
+  a {
+    text-decoration: none;
+    color: $header-color;
+  }
+}
+button:hover {
+  transform: translateY(4px);
+}
+.recommendations {
+  height: 35rem;
+  padding: 3rem 10rem;
+
+  h2 {
+    color: $title-color;
+  }
+}
+.card {
+  display: flex;
+  padding: 2rem 10rem;
+  justify-content: center;
+  justify-content: space-evenly;
+
+  img {
+    width: 20rem;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+  }
+  .card-image {
+    position: relative;
+    padding: 0 2rem;
+  }
+  .card-image a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .card-image h2 {
+    position: absolute;
+    top: 27rem;
+    left: 15rem;
+    color: $header-color;
+  }
+}
+
+.card-image:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+/*Footer Section*/
+
+.footer {
+  height: 15rem;
+  background-color: $background-color;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  h2 {
+    color: $title-color;
+    padding-bottom: 2rem;
+  }
+  .footer__para {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: $active-page-color;
+    padding-bottom: 1rem;
+  }
+  .footer__hours {
+    display: flex;
+  }
+  .footer__hours-para {
+    padding-right: 2rem;
+  }
+  .footer-time {
+    color: $title-color;
+  }
+}
+
+.social-icon {
+  width: 2rem;
+  padding-right: 2rem;
+}
+.facebook {
+  width: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: fit-content;
+    margin: auto;
+    padding-top: 5rem;
+    padding-left: 2rem;
+  }
+  .hero-image img {
+    width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header-navigation {
+    display: block;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 10rem;
+  }
+
+  .recommendations-section {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    align-self: flex-start;
+  }
+
+  .recommendations,
+  .card-image,
+  .hero {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 135rem;
+    width: 100%;
+    height: 25rem;
+    justify-content: left;
+  }
+}
